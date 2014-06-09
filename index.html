@@ -5,21 +5,23 @@
   <title>Student App</title>
   <script src="lib/angular.min.js"></script>
   <script src="js/controllers.js"></script>
-  <link rel="stylesheet" href="css/foundation.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-  <div class="row">
-    <div class="large-12 columns">
-      <h2>Student App</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Student App</h2>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="large-12 columns" ng-controller="MyController">
-      <ul>
-        <li ng-repeat="item in students">
-          {{item.name}}
-        </li>
-      </ul>
+    <div class="row">
+      <div class="col-md-12" ng-controller="MyController">
+        <ul>
+          <li ng-repeat="item in students">
+            {{item.name}}
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </body>
