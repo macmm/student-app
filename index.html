@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Student App</title>
+  <script src="lib/angular.min.js"></script>
+  <script src="js/controllers.js"></script>
+  <link rel="stylesheet" href="css/foundation.min.css">
+</head>
+<body>
+  <div class="row">
+    <div class="large-12 columns">
+      <h2>Student App</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns" ng-controller="MyController">
+      <ul>
+        <li ng-repeat="item in students">
+          {{item.name}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
