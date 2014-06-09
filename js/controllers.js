@@ -11,5 +11,9 @@ myApp.controller('MyController', function MyController($scope) {
     { "name":"Raouf Nabi"  },
     { "name":"Jason Mannon"  },
     { "name":"Jason Hamilton"  }
-  ]
+  ],
+  $scope.addName = function() {
+    $scope.students.push({"name": $scope.studentName});
+    $scope.studentName = null;
+  }
 });
