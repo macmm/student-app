@@ -19,5 +19,4 @@ An app built with AngularJS to keep track of students' attendance.
 
 * easily sign-in when I arrive to class
 * view my attendance history 
-* Unordered list item 
 
