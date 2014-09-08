@@ -1,6 +1,6 @@
 (function () {
 	
-	var MyController = function ($scope) {
+	var StudentsController = function ($scope) {
 	  $scope.students = [];
 	  $scope.addStudent = function() {
 	    $scope.students.push({"name": $scope.studentName});
@@ -12,6 +12,6 @@
 	  };
 	};
 	
-	angular.module('myApp').controller('MyController', MyController);
+	angular.module('myApp').controller('StudentsController', StudentsController);
 
 }());

@@ -5,7 +5,7 @@
   	$routeProvider
   		.when('/', 
   		{
-  			controller: 'MyController',
+  			controller: 'StudentsController',
   			templateUrl: 'app/views/sign-in.html'
   		});
   });
