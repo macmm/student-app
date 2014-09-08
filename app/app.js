@@ -6,7 +6,7 @@
   		.when('/', 
   		{
   			controller: 'MyController',
-  			templateUrl: 'index.html'
+  			templateUrl: 'app/views/sign-in.html'
   		});
   });
 
