@@ -14,15 +14,7 @@
       <h2 ng-show="students.length && !filtered.length">No Matches</h2>
       <ul ng-show="(query.length > 2) && filtered.length">
         <li ng-repeat="item in filtered = (students | filter:query)">
-          <span ng-click="editing = true" ng-hide="editing">
-            {{item.name}}
-          </span>
-          <span class="form-group" ng-show="editing" ng-submit="editing = false">
-            <form class="form-inline" role="form">
-              <input type="text" class="form-control input-sm" ng-model="item.name" placeholder="Name" ng-required/>
-              <button class="btn btn-default btn-sm" type="submit">Save</button>
-            </form>
-          </span>
+          <a ng-click="studentsFactory.deleteStudent(item)"> {{item.name}}</a>
         </li>
       </ul>
     </div>
