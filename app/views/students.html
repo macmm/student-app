@@ -1,18 +1,19 @@
-<div class="container" ng-controller="StudentsController">
+<div class="container" ng-controller="SignInController">
   <div class="row" ng-show="students.length">
     <div class="col-md-12">
-      <h4>Sign In</h4>
+      <h4>Search Students</h4>
       <form class="form-inline" role="form">
         <div class="form-group">
-          <input ng-model="query" type="text" class="form-control" id="student-name" placeholder="Name">
+          <input ng-model="query" type="text" class="form-control" id="student-name" placeholder="Search">
         </div>
       </form>
     </div>
   </div>
   <div class="row">
     <div class="col-md-12">
+      <h2 ng-show="students.length && filtered.length">Student List</h2>
       <h2 ng-show="students.length && !filtered.length">No Matches</h2>
-      <ul ng-show="(query.length > 2) && filtered.length">
+      <ul>
         <li ng-repeat="item in filtered = (students | filter:query)">
           <span ng-click="editing = true" ng-hide="editing">
             {{item.name}} <a ng-click="studentsFactory.deleteStudent(item)">Delete</a>
@@ -25,6 +26,15 @@
           </span>
         </li>
       </ul>
+    </div>
+    <div class="col-md-4">
+      <h2>New Student</h2>
+      <form ng-submit="studentsFactory.addStudent()" class="form-inline" role="form">
+        <div class="form-group">
+          <input type="text" ng-model="studentsFactory.studentName" class="form-control" id="student-name" placeholder="Enter name">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
     </div>
   </div>
 </div>
