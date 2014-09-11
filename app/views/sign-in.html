@@ -15,7 +15,7 @@
       <ul ng-show="(query.length > 2) && filtered.length">
         <li ng-repeat="item in filtered = (students | filter:query)">
           <span ng-click="editing = true" ng-hide="editing">
-            {{item.name}} <a ng-click="studentsFactory.deleteStudent(item)">Delete</a>
+            {{item.name}}
           </span>
           <span class="form-group" ng-show="editing" ng-submit="editing = false">
             <form class="form-inline" role="form">
