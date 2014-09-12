@@ -1,11 +1,12 @@
 <div class="container" ng-controller="StudentsController">
 	<a href="/#/students">Add Students</a>
   <div class="row" ng-show="students.length">
-    <div class="col-md-12">
-      <h4>Sign In</h4>
-      <form class="form-inline" role="form">
-        <div class="form-group-lg col-xs7">
-          <input ng-model="query" type="text" class="form-control input-lg" id="student-name" placeholder="Name">
+    <div class="col-md-7">
+      <form class="form-horizontal" role="form">
+        <div class="form-group">
+					        <h4>Sign In</h4>
+
+						<input ng-model="query" type="text" class="form-control input-lg" id="student-name" placeholder="Name">
         </div>
       </form>
     </div>
