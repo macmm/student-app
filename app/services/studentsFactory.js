@@ -11,7 +11,11 @@
 	    var index = factory.students.indexOf(student)
 	    factory.students.splice(index, 1);
 	  };
-			
+		
+    factory.alert = function() {
+      alert("clicked");
+    }
+    
 	  return factory;	
 	}
 	
