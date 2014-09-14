@@ -6,13 +6,13 @@
   		.when('/', 
   		{
   			controller: 'SignInController',
-  			templateUrl: 'app/views/sign-in.html'
+  			templateUrl: 'sign-in.html'
   		})
 			
 			.when('/students', 
   		{
   			controller: 'StudentsController',
-  			templateUrl: 'app/views/students.html'
+  			templateUrl: 'students.html'
   		})
 		
 		
