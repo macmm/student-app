@@ -1,9 +1,11 @@
 <div class="container" ng-controller="StudentsController">
-  <div class="row" ng-show="students.length">
-    <div class="col-md-8 sign-in">
+  <div class="row sign-in"  ng-show="students.length">
+    <div class="col-md-3">
+      <h4>Sign In</h4>
+    </div>
+    <div class="col-md-9 name-input">
       <form ng-submit="studentsFactory.alert()" class="form-horizontal" role="form">
         <div class="form-group">
-          <h4>Sign In</h4>
           <h4>Static arrays</h4>
           <pre>Model: {{query | json}}</pre>
           <input type="text" ng-model="query" typeahead="student as student.name for student in students | filter:{name:$viewValue} | limitTo:8" class="form-control input-lg" placeholder="Name">
