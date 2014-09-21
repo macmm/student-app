@@ -2,11 +2,11 @@ body {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	background: none;
-  
+
 }
 
 .full {
-  /*background: url(assets/portland.jpg) no-repeat center center fixed; */
+  background: url('images/portland.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,8 +16,16 @@ body {
 .sign-in {
   margin-top: 100px;
   background: rgba( 0, 0, 0, .7 );
-  box-shadow: 0 3px 6px 0 rgba( 0, 0, 0, .2 );
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .2);
   color: #aaa;
+}
+
+.main-box {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -585px;
+  margin-bottom: 300px;
 }
 
 .input-lg {
